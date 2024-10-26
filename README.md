@@ -13,7 +13,7 @@ cd final<br />
 1: python manage.py runserver<br />
 2: Open your web browser and go to http://localhost:8000 to access the application.
 ### UI Video
-https://github.com/user-attachments/assets/f0fd92e5-490a-4292-9807-3bc16ab91afa
+
 ### Author
 Ayesha
 
