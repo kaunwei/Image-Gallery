@@ -12,8 +12,9 @@ cd final<br />
 ### Running the application 
 1: python manage.py runserver<br />
 2: Open your web browser and go to http://localhost:8000 to access the application.
-### UI Video
-
+### User Interface
+Check UI video from below link
+https://www.linkedin.com/posts/activity-7255872175860006912-OX_Z?utm_source=share&utm_medium=member_android
 ### Author
 Ayesha
 
