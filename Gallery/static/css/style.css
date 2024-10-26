@@ -1,0 +1,85 @@
+
+.animated-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(270deg, #ffffff, #000000);
+    background-size: 800% 800%;
+    animation: gradientAnimation 10s ease infinite;
+    z-index: -1;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.fancy-heading {
+    font-size: 4rem;
+    color: #fff;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    animation: glow 1.5s ease-in-out infinite alternate, slideIn 2s ease forwards;
+}
+
+.fancy-heading::before, 
+.fancy-heading::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, #ff6b6b, #f06595, #845ef7, #5c7cfa, #74c0fc);
+    background-size: 300% 300%;
+    z-index: -1;
+    filter: blur(20px);
+    opacity: 0.7;
+    animation: glowShift 5s infinite;
+}
+
+.fancy-heading::after {
+    filter: blur(40px);
+    opacity: 0.5;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #ff6b6b, 0 0 20px #f06595, 0 0 30px #845ef7, 0 0 40px #5c7cfa;
+    }
+    to {
+        text-shadow: 0 0 20px #74c0fc, 0 0 30px #5c7cfa, 0 0 40px #845ef7, 0 0 50px #f06595;
+    }
+}
+
+@keyframes glowShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
